@@ -13,7 +13,7 @@
 
 /* Common Styles for Both Desktop and Mobile */
 nav {
-  height: 9vh;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
