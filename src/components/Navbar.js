@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./css/Navbar.css";
-import { Link } from "react-router-dom";
 
 export default function Navbar(props) {
   const [menuState, changeMenuState] = useState("");
@@ -41,27 +40,27 @@ export default function Navbar(props) {
         className={`${isScrolled ? "scrolled-navbar" : "transparent-navbar"}`}
       >
         <div className="lefty">
-          <Link to="/">
+          <a href="#">
             <h1>Little-<span className="yellow">Lemons</span></h1>
-          </Link>
+          </a>
         </div>
         <div className="righty">
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <a href="#">Home</a>
             </li>
 
             <li>
-              <Link to="/">About</Link>
+              <a href="#">About</a>
             </li>
             <li>
-              <Link to="/">Menu</Link>
+              <a href="#">Menu</a>
             </li>
             <li>
-              <Link to="/">Reservations</Link>
+              <a href="#">Reservations</a>
             </li>
             <li>
-              <Link to="/">Order Online</Link>
+              <a href="#">Order Online</a>
             </li>
           </ul>
         </div>
@@ -87,32 +86,32 @@ export default function Navbar(props) {
       >
         <ul>
           <li>
-            <Link onClick={closeMenu} to="/">
+            <a onClick={closeMenu} href="#">
               Home
-            </Link>
+            </a>
           </li>
 
           <li>
-            <Link onClick={closeMenu} to="/">
+            <a onClick={closeMenu} href="#">
               About
-            </Link>
+            </a>
           </li>
           <li>
-            <Link onClick={closeMenu} to="/">
+            <a onClick={closeMenu} href="#">
               Menu
-            </Link>
+            </a>
           </li>
           <li>
-            <Link onClick={closeMenu} to="/">Reservations</Link>
+            <a onClick={closeMenu} href="#">Reservations</a>
           </li>
           <li>
-            <Link onClick={closeMenu} to="/">Order Online</Link>
+            <a onClick={closeMenu} href="#">Order Online</a>
           </li>
           <li>
-            <Link onClick={closeMenu} to="/">My Basket</Link>
+            <a onClick={closeMenu} href="#">My Basket</a>
           </li>
           <li>
-            <Link onClick={closeMenu} to="/">Login</Link>
+            <a onClick={closeMenu} href="#">Login</a>
           </li>
         </ul>
       </div>

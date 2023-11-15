@@ -132,7 +132,9 @@ const Body = () => {
           </div>
       </section>
       <footer>
-        
+        <section className="footer-section">
+          
+        </section>
       </footer>
     </>
   );
