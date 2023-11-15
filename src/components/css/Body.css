@@ -90,6 +90,37 @@
     justify-content: space-around;
     flex-wrap: wrap;
 }
+/* More information */
+.more-information{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+.left-info{
+    width: 50%;
+    padding: 10px 10px 10px 100px;
+}
+.right-info{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    padding: 20px;
+}
+.right-info img{
+    position: absolute;
+    max-width: 350px;
+}
+.upper-img{ 
+    top: 0;
+}
+.lower-img{
+    top: 50%;
+    left: 30%;
+}
+.left-info h2{
+    font-size: 3rem;
+}
 @media only screen and (max-width:1000px){
     .intro{
         flex-direction: column-reverse;
@@ -104,5 +135,48 @@
     .introduction-picture img{
         max-width: 350px;
         margin-bottom: 20px;
+    }
+    .more-information{
+        flex-direction: column-reverse;
+        height: 80vh;
+    }
+    .left-info, .right-info{
+        width: 100%;
+    }
+    .upper-img{
+        left: 25%;
+    }
+    .lower-img{
+        left: 40%;
+        top: 30%;
+    }
+    .right-info{
+        margin-bottom: 40px;
+    }
+
+    .left-info{
+        text-align: center;
+        padding: 0;
+    }
+}
+@media only screen and (max-width:650px){
+    .upper-img{
+        left: 15%;
+    }
+    .right-info{
+        margin-bottom: 60px;
+    }
+    .lower-img{
+        left: 30%;
+    }
+}
+@media only screen and (max-width:550px){
+    .right-info img{
+        max-width: 250px;
+    }
+}
+@media only screen and (max-width:400px){
+    .right-info img{
+        max-width: 200px;
     }
 }

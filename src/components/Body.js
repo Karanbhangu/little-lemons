@@ -90,7 +90,6 @@ const Body = () => {
             testimonial="As someone with a discerning palate, finding a restaurant that embodies culinary excellence and ambiance is a rarity. Little-Lemons, however, has effortlessly mastered the art of providing an unparalleled dining experience."
             yellowStars={
               <>
-                {" "}
                 <i className="fa-solid fa-star"></i>
                 <i className="fa-solid fa-star"></i>
                 <i className="fa-solid fa-star"></i>
@@ -117,6 +116,24 @@ const Body = () => {
           />
         </section>
       </section>
+      <section className="more-information">
+          <div className="left-info">
+            <h2>Little-<span className="yellow">Lemons</span></h2>
+            <p style={{marginBottom:"10px"}} className="city">Chicago</p>
+            <p className="intro-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Aut natus non amet debitis eius sunt assumenda <br /> ipsum autem molestiae consectetur nisi tempora nemo, quidem quasi eligendi tempore a accusantium delectus.</p>
+            <br />
+            <p className="intro-text">
+              Lorem ipsum dolor sit amet  <br /> consectetur adipisicing elit. Labore enim inventore molestias neque et sequi, ipsa eligendi iure nulla error.
+            </p>
+          </div>
+          <div className="right-info">
+            <img src="https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className="upper-img" />
+            <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className="lower-img" />
+          </div>
+      </section>
+      <footer>
+        
+      </footer>
     </>
   );
 };
