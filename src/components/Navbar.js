@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./css/Navbar.css";
 import { Link } from "react-router-dom";
-import Logo from "./icons_assets/Logo.svg";
 
 export default function Navbar(props) {
   const [menuState, changeMenuState] = useState("");

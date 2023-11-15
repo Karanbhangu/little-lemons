@@ -2,6 +2,9 @@ import React from "react";
 import "./css/Body.css";
 import MenuSpecial from "./MiniComponents/MenuSpecial";
 import introPic from "./icons_assets/Mario and Adrian A.jpg";
+import burger from "./icons_assets/burger.png"
+import fries from "./icons_assets/Fries.png"
+import wraps from "./icons_assets/wraps.png"
 
 const Body = () => {
   return (
@@ -38,8 +41,13 @@ const Body = () => {
           </a>
         </div>
         <div className="specials">
-          <MenuSpecial /> 
+          <MenuSpecial name="Burger" price="12.99" description="Succulent, juicy, and packed with flavor, our signature burgers are culinary marvels that redefine the art of the classic burger." image={burger}/> 
+          <MenuSpecial name="French Fries" price="3.50" description="Step into a world where every bite crunches with delight, where humble potatoes transform into golden masterpieces that accompany our sensational burgers. " image={fries}/>
+          <MenuSpecial name="Wraps" price="9.99" description="Embark on a culinary voyage with our exquisite wraps, where taste and convenience intertwine in a harmony of flavors. " image={wraps}/>
         </div>
+      </section>
+      <section className="testimonials">
+        <h2 className="heading" style={{textAlign:"center"}}>Testimonials</h2>
       </section>
     </>
   );
