@@ -133,7 +133,7 @@ const Body = () => {
       </section>
       <footer>
         <section className="footer-section">
-          
+            <p className="yellow">©Little-Lemons 2023-2024</p>
         </section>
       </footer>
     </>
